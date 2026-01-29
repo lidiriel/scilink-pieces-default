@@ -1,0 +1,15 @@
+{
+    "name": "CustomPythonPiece",
+    "description": "Executes user-defined Python code.",
+    "dependency": {
+        "requirements_file": "requirements00.txt"
+    },
+    "tags": [
+        "default",
+        "python"
+    ],
+    "style": {
+        "node_label": "Custom Python",
+        "icon_class_name": "fa-brands:python"
+    }
+}

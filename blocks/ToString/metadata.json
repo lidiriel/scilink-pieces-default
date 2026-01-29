@@ -1,0 +1,15 @@
+{
+    "name": "ToStrinPiece",
+    "description": "A Piece that transforms any input to string.",
+    "dependency": {
+        "requirements_file": "requirements00.txt"
+    },
+    "tags": [
+        "default",
+        "string"
+    ],
+    "style": {
+        "node_label": "To String",
+        "icon_class_name": "fa-solid:font"
+    }
+}

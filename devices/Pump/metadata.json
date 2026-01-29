@@ -1,0 +1,16 @@
+{
+    "name": "PumpPiece",
+    "description": "Executes pump command.",
+    "dependency": {
+        "requirements_file": "requirements00.txt"
+    },
+    "tags": [
+        "default",
+        "hardware",
+        "actuator"
+   	],
+    "style": {
+        "node_label": "Pump command",
+        "icon_class_name": "fa-solid:fa-plug"
+    }
+}

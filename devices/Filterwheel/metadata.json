@@ -1,0 +1,16 @@
+{
+    "name": "FilterwheelPiece",
+    "description": "Executes filter wheel command.",
+    "dependency": {
+        "requirements_file": "requirements00.txt"
+    },
+    "tags": [
+        "default",
+        "hardware",
+        "actuator"
+   	],
+    "style": {
+        "node_label": "Filter wheel command",
+        "icon_class_name": "fa-solid:fa-plug"
+    }
+}
