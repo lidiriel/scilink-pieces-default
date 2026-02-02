@@ -1,6 +1,7 @@
 {
     "name": "SleepPiece",
     "description": "A Piece that sleeps for a given number of seconds.",
+    "type": "block",
     "dependency": {
         "requirements_file": "requirements00.txt"
     },
@@ -11,5 +12,12 @@
     "style": {
         "node_label": "Sleep",
         "icon_class_name": "fa-solid:hourglass-start"
+    },
+    "user_input": {
+        "duration_seconds": {
+            "type": "number",
+            "description": "Duration in seconds for the sleep.",
+            "default": 10
+        }
     }
 }

@@ -1,16 +1,35 @@
 {
     "name": "PumpPiece",
     "description": "Executes pump command.",
-    "dependency": {
-        "requirements_file": "requirements00.txt"
-    },
+    "brand": "default",
+    "model": "Pump",
+    "piece_type": "device",
     "tags": [
         "default",
         "hardware",
         "actuator"
    	],
     "style": {
-        "node_label": "Pump command",
+        "node_label": "Pump",
         "icon_class_name": "fa-solid:fa-plug"
+    },
+    "settings": {
+        "device_id": {
+            "type": "string",
+            "description": "The unique identifier for the pump device.",
+            "default": "Pump-%n",
+            "replace_node_label": true          
+        },
+        "connection": "MODBUS-RTU"
+    },
+    "user_input": {
+        "speed": {
+            "type": "integer",
+            "description": "The speed setting for the pump in RPM.",
+            "minimum": -5000,
+            "maximum": 5000,
+            "default": 0,
+            "visible": true
+        }
     }
 }

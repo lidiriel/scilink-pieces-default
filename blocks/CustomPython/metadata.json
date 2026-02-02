@@ -1,6 +1,7 @@
 {
     "name": "CustomPythonPiece",
     "description": "Executes user-defined Python code.",
+    "type": "block",
     "dependency": {
         "requirements_file": "requirements00.txt"
     },

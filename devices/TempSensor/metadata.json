@@ -1,0 +1,34 @@
+{
+    "name": "TemperatureSensorPiece",
+    "description": "Reads temperature from a sensor.",
+    "brand": "default",
+    "model": "Temperature Sensor",
+    "piece_type": "device",
+    "tags": [
+        "default",
+        "hardware",
+        "sensors"
+   	],
+    "style": {
+        "node_label": "Temperature Sensor",
+        "icon_class_name": "fa-solid:fa-thermometer-half"
+    },
+    "settings": {
+        "device_id": {
+            "type": "string",
+            "description": "The unique identifier for the temperature sensor device.",
+            "default": "TempSensor-%n",
+            "replace_node_label": true          
+        },
+        "connection": "MODBUS-RTU"
+    },
+    "user_output": {
+        "temperature": {
+            "type": "float",
+            "description": "The temperature reading from the sensor in Celsius.",
+            "minimum": -100,
+            "maximum": 100,
+            "visible": true
+        }
+    }
+}

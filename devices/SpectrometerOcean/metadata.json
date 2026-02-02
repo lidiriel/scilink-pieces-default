@@ -1,0 +1,42 @@
+{
+    "name": "SpectrometerOceanPiece",
+    "description": "Reads spectral data from an ocean spectrometer.",
+    "brand": "default",
+    "model": "Ocean Spectrometer",
+    "piece_type": "device",
+    "tags": [
+        "default",
+        "hardware",
+        "sensors"
+   	],
+    "style": {
+        "node_label": "Ocean Spectrometer",
+        "icon_class_name": "fa-solid:fa-wave-square"
+    },
+    "settings": {
+        "device_id": {
+            "type": "string",
+            "description": "The unique identifier for the ocean spectrometer device.",
+            "default": "SpectrometerOcean-%n",
+            "replace_node_label": true          
+        },
+        "integration_time_ms": {
+            "type": "integer",
+            "description": "Integration time in milliseconds for the spectrometer.",
+            "minimum": 1,
+            "maximum": 10000,
+            "default": 100
+        },
+        "connection": "USB" 
+    },
+    "user_output": {
+        "spectrum": {
+            "type": "array",
+            "description": "The spectral data readings from the ocean spectrometer.",
+            "items": {
+                "type": "float"
+            },
+            "visible": true
+        }
+    }
+}

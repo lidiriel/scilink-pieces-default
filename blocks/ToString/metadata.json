@@ -1,6 +1,7 @@
 {
     "name": "ToStrinPiece",
     "description": "A Piece that transforms any input to string.",
+    "type": "block",
     "dependency": {
         "requirements_file": "requirements00.txt"
     },
