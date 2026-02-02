@@ -27,7 +27,7 @@
             "maximum": 10000,
             "default": 100
         },
-        "connection": "USB" 
+        "connection": "USB"
     },
     "user_output": {
         "spectrum": {

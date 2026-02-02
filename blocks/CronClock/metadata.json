@@ -1,0 +1,31 @@
+{
+    "name": "CronClockPiece",
+    "description": "A Piece that launches events at regular intervals.",
+    "type": "block",
+    "dependency": {
+        "requirements_file": "requirements00.txt"
+    },
+    "tags": [
+        "default",
+        "timer",
+        "clock"
+    ],
+    "style": {
+        "node_label": "Cron Clock",
+        "icon_class_name": "fa-solid:clock"
+    },
+    "user_input": {
+        "cron_expression": {
+            "type": "string",
+            "description": "Cron expression defining the clock intervals.",
+            "default": "*/1 * * * * *",
+            "placeholder": "e.g., '*/5 * * * *' for every 5 seconds",
+            "help": "Cron expression format: minute hour day month weekday"
+        }
+    },
+    "events": {
+        "on_tick": {
+            "description": "Triggered at each interval defined by the cron expression."
+        }
+    }
+}
