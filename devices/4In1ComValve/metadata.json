@@ -1,0 +1,75 @@
+{
+    "name": "4In1ComValvePiece",
+    "description": "Executes 4 inlets to 1 common ports valve command.",
+    "brand": "default",
+    "model": "4In1ComValve",
+    "type": "device",
+    "tags": [
+        "hardware",
+        "actuator",
+        "fluidics"
+   	],
+    "style": {
+        "node_label": "4 Inlet 1 Com Valve",
+        "icon_class_name": "fa-solid:fa-tint"
+    },
+    "device_settings": {
+        "device_id": {
+            "type": "string",
+            "description": "The unique identifier for the 4-in-1 common valve device.",
+            "default": "4In1ComValve-%n",
+            "replace_node_label": true          
+        },
+        "dependency": {
+            "type": "device",
+            "tag": "relay",
+            "description": "The relay device, this 4-in-1 common valve is connected to.",         
+            "parameters_match": {
+                "coils_1": {"type":"boolean"},
+                "coils_2": {"type":"boolean"},
+                "coils_3": {"type":"boolean"},
+                "coils_4": {"type":"boolean"}
+            }
+        }
+    },
+    "user_input": {
+        "position": {
+            "type": "enumeration",
+            "description": "The position to move the 4-in-1 common valve to.",
+            "options": [
+                "ALL_OPEN",
+                "INLET_1_OPEN",
+                "INLET_2_OPEN",
+                "INLET_3_OPEN",
+                "INLET_4_OPEN",
+                "INLET_1_2_OPEN",
+                "INLET_1_3_OPEN",
+                "INLET_1_4_OPEN",
+                "INLET_2_3_OPEN",
+                "INLET_2_4_OPEN",
+                "INLET_3_4_OPEN",
+                "INLET_1_2_3_OPEN",
+                "INLET_1_2_4_OPEN",
+                "INLET_1_3_4_OPEN",
+                "INLET_2_3_4_OPEN",
+                "ALL_CLOSED",
+                "INLET_1_CLOSED",
+                "INLET_2_CLOSED",
+                "INLET_3_CLOSED",
+                "INLET_4_CLOSED",
+                "INLET_1_2_CLOSED",
+                "INLET_1_3_CLOSED",
+                "INLET_1_4_CLOSED",
+                "INLET_2_3_CLOSED",
+                "INLET_2_4_CLOSED",
+                "INLET_3_4_CLOSED",
+                "INLET_1_2_3_CLOSED",
+                "INLET_1_2_4_CLOSED",
+                "INLET_1_3_4_CLOSED",
+                "INLET_2_3_4_CLOSED"
+            ],
+            "default": "ALL_CLOSED",
+            "visible": true
+        }
+    }   
+}

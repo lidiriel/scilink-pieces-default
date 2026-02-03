@@ -3,9 +3,8 @@
     "description": "Reads temperature from a sensor.",
     "brand": "default",
     "model": "Temperature Sensor",
-    "piece_type": "device",
+    "type": "device",
     "tags": [
-        "default",
         "hardware",
         "sensors"
    	],

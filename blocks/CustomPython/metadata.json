@@ -6,8 +6,8 @@
         "requirements_file": "requirements00.txt"
     },
     "tags": [
-        "default",
-        "python"
+        "python",
+        "scripting"
     ],
     "style": {
         "node_label": "Custom Python",

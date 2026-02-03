@@ -3,9 +3,8 @@
     "description": "Reads spectral data from an ocean spectrometer.",
     "brand": "default",
     "model": "Ocean Spectrometer",
-    "piece_type": "device",
+    "type": "device",
     "tags": [
-        "default",
         "hardware",
         "sensors"
    	],

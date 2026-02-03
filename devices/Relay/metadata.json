@@ -1,0 +1,74 @@
+{
+    "name": "RelayPiece",
+    "description": "Controls a 8 NO/NC relay device.",
+    "brand": "default",
+    "model": "Relay Device",
+    "type": "device",
+    "tags": [
+        "hardware",
+        "relays"
+   	],
+    "style": {
+        "node_label": "Relay Device",
+        "icon_class_name": "fa-solid:fa-bolt"
+    },
+    "settings": {
+        "device_id": {
+            "type": "string",
+            "description": "The unique identifier for the relay device.",
+            "default": "Relay-%n",
+            "replace_node_label": true          
+        },
+        "connection": "MODBUS-RTU"
+    },
+    "user_input": {
+        "OUTPUT_1": {
+            "type": "boolean",
+            "description": "The state of the relay (true = ON, false = OFF).",
+            "default": false,
+            "visible": false
+        },
+        "OUTPUT_2": {
+            "type": "boolean",
+            "description": "The state of the relay (true = ON, false = OFF).",
+            "default": false,
+            "visible": false
+        },
+        "OUTPUT_3": {
+            "type": "boolean",
+            "description": "The state of the relay (true = ON, false = OFF).",
+            "default": false,
+            "visible": false
+        },
+        "OUTPUT_4": {
+            "type": "boolean",
+            "description": "The state of the relay (true = ON, false = OFF).",
+            "default": false,
+            "visible": false
+        },
+        "OUTPUT_5": {
+            "type": "boolean",
+            "description": "The state of the relay (true = ON, false = OFF).",
+            "default": false,
+            "visible": false
+        },
+        "OUTPUT_6": {
+            "type": "boolean",
+            "description": "The state of the relay (true = ON, false = OFF).",
+            "default": false,
+            "visible": false
+        },
+        "OUTPUT_7": {
+            "type": "boolean",
+            "description": "The state of the relay (true = ON, false = OFF).",
+            "default": false,
+            "visible": false
+        },
+        "OUTPUT_8": {
+            "type": "boolean",
+            "description": "The state of the relay (true = ON, false = OFF).",
+            "default": false,
+            "visible": false
+        }
+    }
+}
