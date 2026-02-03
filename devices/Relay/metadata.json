@@ -21,50 +21,50 @@
         },
         "connection": "MODBUS-RTU"
     },
-    "user_input": {
-        "OUTPUT_1": {
+    "user_inputs": {
+        "output_1": {
             "type": "boolean",
             "description": "The state of the relay (true = ON, false = OFF).",
             "default": false,
             "visible": false
         },
-        "OUTPUT_2": {
+        "output_2": {
             "type": "boolean",
             "description": "The state of the relay (true = ON, false = OFF).",
             "default": false,
             "visible": false
         },
-        "OUTPUT_3": {
+        "output_3": {
             "type": "boolean",
             "description": "The state of the relay (true = ON, false = OFF).",
             "default": false,
             "visible": false
         },
-        "OUTPUT_4": {
+        "output_4": {
             "type": "boolean",
             "description": "The state of the relay (true = ON, false = OFF).",
             "default": false,
             "visible": false
         },
-        "OUTPUT_5": {
+        "output_5": {
             "type": "boolean",
             "description": "The state of the relay (true = ON, false = OFF).",
             "default": false,
             "visible": false
         },
-        "OUTPUT_6": {
+        "output_6": {
             "type": "boolean",
             "description": "The state of the relay (true = ON, false = OFF).",
             "default": false,
             "visible": false
         },
-        "OUTPUT_7": {
+        "output_7": {
             "type": "boolean",
             "description": "The state of the relay (true = ON, false = OFF).",
             "default": false,
             "visible": false
         },
-        "OUTPUT_8": {
+        "output_8": {
             "type": "boolean",
             "description": "The state of the relay (true = ON, false = OFF).",
             "default": false,

@@ -1,33 +1,48 @@
 {
-    "name": "FilterwheelPiece",
-    "description": "Executes filter wheel command.",
+    "name": "PinchValvePiece",
+    "description": "Executes pinch valve command.",
     "brand": "default",
-    "model": "Filterwheel",
+    "model": "PinchValve",
     "type": "device",
     "tags": [
         "hardware",
-        "actuator"
+        "actuator",
+        "fluidics"
    	],
     "style": {
-        "node_label": "Filter wheel",
-        "icon_class_name": "fa-solid:fa-plug"
+        "node_label": "Pinch Valve",
+        "icon_class_name": "fa-solid:fa-tint"
     },
     "device_settings": {
         "device_id": {
             "type": "string",
-            "description": "The unique identifier for the filter wheel device.",
-            "default": "Filterwheel-%n",
+            "description": "The unique identifier for the pinch valve device.",
+            "default": "PinchValve-%n",
             "replace_node_label": true          
         },
-        "connection": "SERIAL"
+        "coils_1": {
+                "type": "boolean",
+                "description": "If true, the pinch valve is activated.",
+                "default": false
+        },
+        "dependency": {
+            "type": "device",
+            "tag": "relay",
+            "description": "The relay device this pinch valve is connected to.",
+            "matches": {
+                "user_inputs": ["coils_1"]    
+            }
+        }
     },
-    "user_input": {
+    "user_inputs": {
         "position": {
-            "type": "integer",
-            "description": "The position to move the filter wheel to.",
-            "minimum": 1,
-            "maximum": 8,
-            "default": 1,
+            "type": "enumeration",
+            "description": "The position to move the pinch valve to.",
+            "options": [
+                "OPEN",
+                "CLOSED"
+            ],
+            "default": "CLOSED",
             "visible": true
         }
     }   

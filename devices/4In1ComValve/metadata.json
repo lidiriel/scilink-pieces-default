@@ -20,19 +20,36 @@
             "default": "4In1ComValve-%n",
             "replace_node_label": true          
         },
+        "coils_1": {
+                "type": "boolean",
+                "description": "If true, inlet 1 is activated.",
+                "default": false
+        },
+        "coils_2": {
+                "type": "boolean",
+                "description": "If true, inlet 2 is activated.",
+                "default": false
+        },
+        "coils_3": {
+                "type": "boolean",
+                "description": "If true, inlet 3 is activated.",
+                "default": false
+        },
+        "coils_4": {
+                "type": "boolean",
+                "description": "If true, inlet 4 is activated.",
+                "default": false
+        },
         "dependency": {
             "type": "device",
             "tag": "relay",
             "description": "The relay device, this 4-in-1 common valve is connected to.",         
-            "parameters_match": {
-                "coils_1": {"type":"boolean"},
-                "coils_2": {"type":"boolean"},
-                "coils_3": {"type":"boolean"},
-                "coils_4": {"type":"boolean"}
+            "matches": {
+                "user_inputs": ["coils_1","coils_2","coils_3","coils_4"]
             }
         }
     },
-    "user_input": {
+    "user_inputs": {
         "position": {
             "type": "enumeration",
             "description": "The position to move the 4-in-1 common valve to.",
